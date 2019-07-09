@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scroll/OverlayScrollbars.min.css">
+    <script src="./scroll/OverlayScrollbars.min.js"></script>
+    <style>
+        header{
+            width: 100px;
+            height: 10000px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            //The first argument are the elements to which the plugin shall be initialized
+            //The second argument has to be at least a empty object or a object with your desired options
+            OverlayScrollbars(document.querySelectorAll("body"), { });
+        });
+
+        // var i = 0;
+        // window.onresize = function () {
+        //     i++;
+        //     console.log(i)
+        // }
+
+        // class add {
+        //     name (val) {
+        //         console.log(val);
+        //     }
+        // }
+        // let ad1 = new add;
+        // ad1.name("a")
+
+        class fns {
+            name (c) {
+                console.log(c)
+            };
+            constructor (a, b) {
+                console.log(this.a, this.b);
+            };
+            add () {
+                console.log(this.a + this.b)
+            }
+        }
+        let fn1 = new fns(1, 2);
+        fn1.name(5);
+        fn1.add();
+        
+    </script>
+</body>
+</html>
